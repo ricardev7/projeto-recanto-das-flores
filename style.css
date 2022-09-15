@@ -1,0 +1,284 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Ephesis&family=Great+Vibes&family=Gwendolyn:wght@700&family=Sarala&display=swap');
+@font-face {
+    font-family: 'Choppin' ;
+    src: url('./assets/fonts/ChopinScript.otf') format('opentype');
+    }
+    
+    @font-face {
+        font-family: 'Banksia';
+        src: url('./assets/fonts/banksb26.ttf') format('truetype');
+    }    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    text-decoration: none;
+}
+body{
+    background-color: whitesmoke;
+    font-size: 100%;
+    font-family: 'Sarala', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+
+ }
+
+header{
+    background-color:#D61F31;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+header a{
+    color: #ffffff;
+}
+
+.logo{
+    float: right;
+    padding-top: 10px;
+    
+}
+
+#logo-centro{
+    max-width: 60%;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+ 
+.h1-header{
+    font-family:'Choppin', cursive;
+    font-size: max(30px, 2vw)
+}
+
+.rec {
+    font-family: 'Banksia' , cursive ;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+.redes a{
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+    gap: 5px;
+    padding-top: 12px;
+    font-size: 0.8rem;   
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;   
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.imgcrs{
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+}
+
+nav a {
+    font-size: 20px;
+    background-color: rgb(226, 46, 85);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.atd-lin{
+    color: rgb(71, 69, 69);
+    background-color:#F2CCC9;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: min(12px, 1.5vw);
+}
+
+.container-hist{
+    max-width: 800px;
+    margin: auto;
+}
+
+.cat-produtos{
+    display: grid;
+    
+}
+
+.content-slides {
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.navigation{
+    position: relative;
+    bottom: 20px;
+    display: flex; 
+    justify-content: center;
+    
+
+}
+
+.bar {
+    width: 40px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.bar:hover{
+    background-color: #fff;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+.depoimentos{
+    margin-top: 20px;
+}
+
+.link-rota{
+    background-color: #0C401E;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.link-rota a{
+    color: white;
+    font-weight: bold;
+}
+
+.link-rota:hover{
+    background-color: #248a04;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+footer{
+    display: flex;
+    background-color: #BBF0D2;
+    border-radius: 10px 10px 0px 0px ;
+    padding: 8px;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 6vh;
+}
+
+.contatos a{
+    text-decoration: none;
+}
+
+.contatos a:hover {
+    color: #248a04;
+    font-weight: bold;
+    }
+
+@media (max-width: 600px) {
+    .logo{
+       width: 50px;
+       float: left;
+    }
+
+    .header{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+    }
+
+   main{
+    margin: 10px;
+   }
+
+   section{
+    margin: 10px;
+   }
+   
+   .depoimentos{
+    margin: 10px;
+   }
+
+    footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+ 
